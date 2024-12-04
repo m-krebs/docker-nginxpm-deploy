@@ -1,0 +1,20 @@
+{
+	"openapi": "3.0.3",
+	"info": {
+		"title": "docker-nginxpm-deploy",
+		"description": "REST API of docker-nginxpm-deploy app.",
+		"version": "0.0.1"
+	},
+	"paths": {
+		"/api/ping": {
+			"get": {
+				"description": "The API ping endpoint",
+				"responses": {
+					"200": {
+						"description": "OK"
+					}
+				}
+			}
+		}
+	}
+}
