@@ -23,6 +23,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/node": "^22.10.1",
 		"autoprefixer": "^10.4.20",
+		"bits-ui": "1.0.0-next.66",
 		"child_process": "^1.0.2",
 		"clsx": "^2.1.1",
 		"docker-compose": "^1.1.0",
@@ -31,6 +32,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
+		"lucide-svelte": "^0.447.0",
 		"path": "^0.12.7",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
@@ -50,6 +52,7 @@
 		"@libsql/client": "^0.9.0",
 		"drizzle-orm": "^0.33.0",
 		"mode-watcher": "^0.5.0",
+		"simple-git": "^3.27.0",
 		"swagger-ui": "^5.18.2"
 	}
 }
