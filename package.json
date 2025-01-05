@@ -23,7 +23,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/node": "^22.10.1",
 		"autoprefixer": "^10.4.20",
-		"bits-ui": "1.0.0-next.67",
+		"bits-ui": "1.0.0-next.77",
 		"child_process": "^1.0.2",
 		"clsx": "^2.1.1",
 		"docker-compose": "^1.1.0",
@@ -34,6 +34,7 @@
 		"formsnap": "2.0.0-next.1",
 		"globals": "^15.0.0",
 		"lucide-svelte": "^0.447.0",
+		"mode-watcher": "^0.5.0",
 		"path": "^0.12.7",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
@@ -41,6 +42,7 @@
 		"simple-git": "^3.27.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
+		"svelte-sonner": "^0.3.28",
 		"sveltekit-superforms": "^2.21.1",
 		"tailwind-merge": "^2.5.5",
 		"tailwind-variants": "^0.3.0",
@@ -54,8 +56,8 @@
 	},
 	"dependencies": {
 		"@libsql/client": "^0.9.0",
+		"@tanstack/table-core": "^8.20.5",
 		"drizzle-orm": "^0.33.0",
-		"mode-watcher": "^0.5.0",
 		"swagger-ui": "^5.18.2"
 	}
 }

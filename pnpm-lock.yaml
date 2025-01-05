@@ -11,12 +11,12 @@ importers:
       '@libsql/client':
         specifier: ^0.9.0
         version: 0.9.0
+      '@tanstack/table-core':
+        specifier: ^8.20.5
+        version: 8.20.5
       drizzle-orm:
         specifier: ^0.33.0
         version: 0.33.0(@libsql/client@0.9.0)(react@18.3.1)
-      mode-watcher:
-        specifier: ^0.5.0
-        version: 0.5.0(svelte@5.4.0)
       swagger-ui:
         specifier: ^5.18.2
         version: 5.18.2
@@ -40,8 +40,8 @@ importers:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       bits-ui:
-        specifier: 1.0.0-next.67
-        version: 1.0.0-next.67(svelte@5.4.0)
+        specifier: 1.0.0-next.77
+        version: 1.0.0-next.77(svelte@5.4.0)
       child_process:
         specifier: ^1.0.2
         version: 1.0.2
@@ -72,6 +72,9 @@ importers:
       lucide-svelte:
         specifier: ^0.447.0
         version: 0.447.0(svelte@5.4.0)
+      mode-watcher:
+        specifier: ^0.5.0
+        version: 0.5.0(svelte@5.4.0)
       path:
         specifier: ^0.12.7
         version: 0.12.7
@@ -93,6 +96,9 @@ importers:
       svelte-check:
         specifier: ^4.0.0
         version: 4.1.0(svelte@5.4.0)(typescript@5.7.2)
+      svelte-sonner:
+        specifier: ^0.3.28
+        version: 0.3.28(svelte@5.4.0)
       sveltekit-superforms:
         specifier: ^2.21.1
         version: 2.21.1(@sveltejs/kit@2.9.0(@sveltejs/vite-plugin-svelte@5.0.1(svelte@5.4.0)(vite@6.0.2(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.4.0)(vite@6.0.2(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)))(@types/json-schema@7.0.15)(svelte@5.4.0)(typescript@5.7.2)
@@ -1130,6 +1136,10 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
+  '@tanstack/table-core@8.20.5':
+    resolution: {integrity: sha512-P9dF7XbibHph2PFRz8gfBKEXEY/HJPOhym8CHmjF8y3q5mWpKx9xtZapXQUWCgkqvsK0R46Azuz+VaxD4Xl+Tg==}
+    engines: {node: '>=12'}
+
   '@tree-sitter-grammars/tree-sitter-yaml@0.6.1':
     resolution: {integrity: sha512-FqgUNdtMuPpk5D/9YQvCxTK4tzlUEVq/yNewdcxJbMv0KVt/yDfuuUn5ZvxphftKyOco+1e/6/oNHCKVQ5A83Q==}
     peerDependencies:
@@ -1378,11 +1388,11 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
-  bits-ui@1.0.0-next.67:
-    resolution: {integrity: sha512-UDsAY8dHJ41h9KdNebRtXNjvjgRATr+b9PAakfvO6ojKxpPPZxilIFq1xmdThX2RmqmmD+suRgN1UIARSNoTGg==}
+  bits-ui@1.0.0-next.77:
+    resolution: {integrity: sha512-IV0AyVEvsRkXv4s/fl4iea5E9W2b9EBf98s9mRMKMc1xHxM9MmtM2r6MZMqftHQ/c+gHTIt3A9EKuTlh7uay8w==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
-      svelte: ^5.0.0-next.1
+      svelte: ^5.11.0
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -2636,10 +2646,15 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  runed@0.15.4:
-    resolution: {integrity: sha512-kmbpstUd7v2FdlBM+MT78IyuOVd38tq/e7MHvVb0fnVCsPSPMD/m2Xh+wUhzg9qCJgxRjBbIKu68DlH/x5VXJA==}
+  runed@0.20.0:
+    resolution: {integrity: sha512-YqPxaUdWL5nUXuSF+/v8a+NkVN8TGyEGbQwTA25fLY35MR/2bvZ1c6sCbudoo1kT4CAJPh4kUkcgGVxW127WKw==}
     peerDependencies:
-      svelte: ^5.0.0-next.1
+      svelte: ^5.7.0
+
+  runed@0.22.0:
+    resolution: {integrity: sha512-ZWVXWhOr0P5xdNgtviz6D1ivLUDWKLCbeC5SUEJ3zBkqLReVqWHenFxMNFeFaiC5bfxhFxyxzyzB+98uYFtwdA==}
+    peerDependencies:
+      svelte: ^5.7.0
 
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
@@ -2773,11 +2788,22 @@ packages:
       svelte:
         optional: true
 
+  svelte-sonner@0.3.28:
+    resolution: {integrity: sha512-K3AmlySeFifF/cKgsYNv5uXqMVNln0NBAacOYgmkQStLa/UoU0LhfAACU6Gr+YYC8bOCHdVmFNoKuDbMEsppJg==}
+    peerDependencies:
+      svelte: ^3.0.0 || ^4.0.0 || ^5.0.0-next.1
+
   svelte-toolbelt@0.4.6:
     resolution: {integrity: sha512-k8OUvXBUifHZcAlWeY/HLg/4J0v5m2iOfOhn8fDmjt4AP8ZluaDh9eBFus9lFiLX6O5l6vKqI1dKL5wy7090NQ==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.0.0-next.126
+
+  svelte-toolbelt@0.7.0:
+    resolution: {integrity: sha512-i/Tv4NwAWWqJnK5H0F8y/ubDnogDYlwwyzKhrspTUFzrFuGnYshqd2g4/R43ds841wmaFiSW/HsdsdWhPOlrAA==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.0.0
 
   svelte@5.4.0:
     resolution: {integrity: sha512-2I/mjD8cXDpKfdfUK+T6yo/OzugMXIm8lhyJUFM5F/gICMYnkl3C/+4cOSpia8TqpDsi6Qfm5+fdmBNMNmaf2g==}
@@ -4151,6 +4177,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@tanstack/table-core@8.20.5': {}
+
   '@tree-sitter-grammars/tree-sitter-yaml@0.6.1(tree-sitter@0.21.1)':
     dependencies:
       node-addon-api: 8.3.0
@@ -4424,15 +4452,15 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  bits-ui@1.0.0-next.67(svelte@5.4.0):
+  bits-ui@1.0.0-next.77(svelte@5.4.0):
     dependencies:
       '@floating-ui/core': 1.6.8
       '@floating-ui/dom': 1.6.12
       '@internationalized/date': 3.6.0
       esm-env: 1.2.1
-      runed: 0.15.4(svelte@5.4.0)
+      runed: 0.22.0(svelte@5.4.0)
       svelte: 5.4.0
-      svelte-toolbelt: 0.4.6(svelte@5.4.0)
+      svelte-toolbelt: 0.7.0(svelte@5.4.0)
 
   brace-expansion@1.1.11:
     dependencies:
@@ -5569,7 +5597,12 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  runed@0.15.4(svelte@5.4.0):
+  runed@0.20.0(svelte@5.4.0):
+    dependencies:
+      esm-env: 1.2.1
+      svelte: 5.4.0
+
+  runed@0.22.0(svelte@5.4.0):
     dependencies:
       esm-env: 1.2.1
       svelte: 5.4.0
@@ -5707,9 +5740,20 @@ snapshots:
     optionalDependencies:
       svelte: 5.4.0
 
+  svelte-sonner@0.3.28(svelte@5.4.0):
+    dependencies:
+      svelte: 5.4.0
+
   svelte-toolbelt@0.4.6(svelte@5.4.0):
     dependencies:
       clsx: 2.1.1
+      style-to-object: 1.0.8
+      svelte: 5.4.0
+
+  svelte-toolbelt@0.7.0(svelte@5.4.0):
+    dependencies:
+      clsx: 2.1.1
+      runed: 0.20.0(svelte@5.4.0)
       style-to-object: 1.0.8
       svelte: 5.4.0
 

@@ -4,4 +4,4 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<span class="whitespace-pre-wrap">{data.commandResult}</span>
+<!-- <img src="https://wallpapercave.com/wp/wp7257826.jpg" alt="batman" /> -->
